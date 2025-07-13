@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract OurToken is ERC20 {
     constructor(uint256 initialSupply) ERC20("OurToken", "OT") {
+        // ERC20._mint(address account, uint256 value)
         _mint(msg.sender, initialSupply);
     }
 }
